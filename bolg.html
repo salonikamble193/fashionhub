@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- bootstrap link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>document</title>
+</head>
+<style>
+    .text {
+        max-width: 70%;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+        color: #9a9a9a;
+
+    }
+
+    .read-more {
+        text-align: center;
+        text-transform: capitalize;
+
+    }
+
+    .read-more a {
+        text-decoration: none;
+        color: #FF8E78;
+
+    }
+
+    .read-more a span {
+        position: relative;
+    }
+
+    .read-more a span::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        bottom: 0;
+        background-color: #FF8E78;
+        transform: scale(1);
+
+        transition: all 0.3s linear;
+    }
+
+    .img-con {
+
+
+        overflow: hidden;
+        width: 390px;
+        height: 280px !important;
+        margin: 0 auto;
+        border-radius: 20px;
+        margin-top: 30px;
+
+    }
+
+    .img-con img {
+        transition: all 0.5s ease-in-out;
+    }
+
+    .img-con img:hover {
+
+        transform: scale(1.1);
+
+    }
+
+    .container {
+        max-width: 1260px !important;
+    }
+
+    .heading1 {
+        text-transform: capitalize;
+        font-size: 24px;
+        text-align: center;
+        margin: 10px 0px;
+    }
+
+    /* .blog-box {
+        padding: 40px;
+    } */
+</style>
+
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <img src="images/logo.png" alt="">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  active" aria-current="page" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  active" aria-current="page" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  active" aria-current="page" href="bolg.html">Blog </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  active" aria-current="page" href="contact.html">Contact </a>
+                    </li>
+                </ul>
+                <form class="d-flex ms-auto">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <section class="about-us">
+        <div class="container">
+            <div class="about-box">
+                <div class="s1">BLOG</div>
+                <div>Home / Blog  </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4">
+                    <div class="blog-box">
+                        <div class="img-con"><img src="images/blog/blog-1.jpg" alt=""></div>
+
+                        <div class="text">
+                            <div><i class="fa-regular fa-user"></i>admin</div>
+                            <div><i class="fa-solid fa-calendar-days"></i>09,jun,2023</div>
+                        </div>
+                        <div>
+                            <h3 class="heading1"> <b>how to make your ux <br> design portfolio stand <br> out</b> </h3>
+                            <div class="read-more"><a href="bolg-details.html"><span>read more</span></a></div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-4">
+                    <div class="img-con"><img src="images/blog/blog-2.jpg" alt=""></div>
+
+                    <div class="text">
+                        <div><i class="fa-regular fa-user"></i>admin</div>
+                        <div><i class="fa-solid fa-calendar-days"></i>09,jun,2023</div>
+                    </div>
+                    <div>
+                        <h3 class="heading1"> <b>how to make your ux <br> design portfolio stand <br> out</b> </h3>
+                        <div class="read-more"><a href="bolg-details.html"><span>read more</span> </a></div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div class="img-con"><img src="images/blog/blog-3.jpg" alt=""></div>
+
+                    <div class="text">
+                        <div><i class="fa-regular fa-user"></i>admin</div>
+                        <div><i class="fa-solid fa-calendar-days"></i>09,jun,2023</div>
+                    </div>
+                    <div>
+                        <h3 class="heading1"> <b>how to make your ux <br> design portfolio stand <br> out</b> </h3>
+                        <div class="read-more"><a href="bolg-details.html"><span>read more</span> </a></div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-4">
+                    <div class="img-con"><img src="images/blog/blog-4.jpg" alt=""></div>
+
+                    <div class="text">
+                        <div><i class="fa-regular fa-user"></i>admin</div>
+                        <div><i class="fa-solid fa-calendar-days"></i>09,jun,2023</div>
+                    </div>
+                    <div>
+                        <h3 class="heading1"> <b>how to make your ux <br> design portfolio stand <br> out</b> </h3>
+                        <div class="read-more"><a href="bolg-details.html"><span>read more</span> </a></div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-4">
+                    <div class="img-con"><img src="images/blog/blog-5.jpg" alt=""></div>
+
+                    <div class="text">
+                        <div><i class="fa-regular fa-user"></i>admin</div>
+                        <div><i class="fa-solid fa-calendar-days"></i>09,jun,2023</div>
+                    </div>
+                    <div>
+                        <h3 class="heading1"> <b>how to make your ux <br> design portfolio stand <br> out</b> </h3>
+                        <div class="read-more"><a href="bolg-details.html"><span>read more</span> </a></div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div class="img-con"><img src="images/blog/blog-6.jpg" alt=""></div>
+
+                    <div class="text">
+                        <div><i class="fa-regular fa-user"></i>admin</div>
+                        <div><i class="fa-solid fa-calendar-days"></i>09,jun,2023</div>
+                    </div>
+                    <div>
+                        <h3 class="heading1"> <b>how to make your ux <br> design portfolio stand <br> out</b> </h3>
+                        <div class="read-more"><a href="bolg-details.html"><span>read more</span> </a></div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-4">
+                    <div class="img-con"><img src="images/blog/blog-7.jpg" alt=""></div>
+
+                    <div class="text">
+                        <div><i class="fa-regular fa-user"></i>admin</div>
+                        <div><i class="fa-solid fa-calendar-days"></i>09,jun,2023</div>
+                    </div>
+                    <div>
+                        <h3 class="heading1"> <b>how to make your ux <br> design portfolio stand <br> out</b> </h3>
+                        <div class="read-more"><a href="bolg-details.html"><span>read more</span> </a></div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-4">
+                    <div class="img-con"><img src="images/blog/blog-8.jpg" alt=""></div>
+
+                    <div class="text">
+                        <div><i class="fa-regular fa-user"></i>admin</div>
+                        <div><i class="fa-solid fa-calendar-days"></i>09,jun,2023</div>
+                    </div>
+                    <div>
+                        <h3 class="heading1"> <b>how to make your ux <br> design portfolio stand <br> out</b> </h3>
+                        <div class="read-more"><a href="bolg-details.html"><span>read more</span> </a></div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-4">
+                    <div class="img-con"><img src="images/blog/blog-1.jpg" alt=""></div>
+
+                    <div class="text">
+                        <div><i class="fa-regular fa-user"></i>admin</div>
+                        <div><i class="fa-solid fa-calendar-days"></i>09,jun,2023</div>
+                    </div>
+                    <div>
+                        <h3 class="heading1"> <b>how to make your ux <br> design portfolio stand <br> out</b> </h3>
+                        <div class="read-more"><a href="bolg-details.html"><span>read more</span> </a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <div> <img src="images/logo-white.png" alt="">
+                        </div> <br>
+                        <p class="para2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis facere
+                            ducimus officia officiis
+                            assumenda vel inventore, maxime ipsa fuga minima ut! Placeat exercitationem veritatis
+                            doloremque.</p>
+                        <div class="footer-icon1">
+                            <div class="i1"><i class="fa-brands  fa-facebook-f"></i></div>
+                            <div class="i1"><i class="fa-brands  fa-skype"></i></div>
+                            <div class="i1"><i class="fa-brands  fa-instagram"></i></div>
+                            <div class="i1"><i class="fa-brands  fa-pinterest-p"></i></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 offset-lg-1">
+                        <div class="footer-text">
+                            <h5><b>Get In Touch</b></h5>
+                            <br>
+                            <ul>
+                                <li>
+                                    <div class="footer-icon2">
+                                        <div class="i2">
+                                            <i class="fa-solid fa-house"></i>
+                                        </div>
+                                        <span>Davis Patrick<br>P.O. Box 147 2546 Sociosqu Rd. <br>Bethlehem Utah
+                                            02913</span>
+                                    </div>
+                                </li><br>
+                                <li>
+                                    <div class="footer-icon2">
+                                        <div class="i2">
+                                            <i class="fa-regular fa-envelope"></i>
+                                        </div>
+                                        <span> support@example.com</span>
+                                    </div>
+                                </li><br>
+                                <li>
+                                    <div class="footer-icon2">
+                                        <div class="i2"><i class="fa-solid fa-phone"></i></div>
+                                        <span>+5236891654</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <ul class="list hover1">
+                            <h5><b>Quick link</b></h5><br>
+                            <li><a href="index.html">Home</a></li> <br>
+                            <li><a href="about.html">About</a></li> <br>
+                            <li><a href="shop.html">Shop</a></li> <br>
+                            <li><a href="bolg.html">Bolg</a></li> <br>
+                            <li><a href="contact.html">Contact </a></li>
+                        </ul>
+                    </div>
+                    <div class="col-2">
+                        <h5><b>Categories</b></h5><br>
+                        <ul class="list hover1">
+                          <li><a href="">Clothing</a></li><br>
+                          <li><a href="">Accessories</a></li><br>
+                          <li><a href="">Women</a></li><br>
+                          <li><a href="">Men</a></li><br>
+                          <li><a href="">New Arrivals</a></li><br>
+                        </ul>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
